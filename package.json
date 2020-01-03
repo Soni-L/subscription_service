@@ -1,0 +1,14 @@
+{
+  "name": "subscription_service",
+  "version": "1.0.0",
+  "description": "a third party subscription service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "soni lamkaj",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
