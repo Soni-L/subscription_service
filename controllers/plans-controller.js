@@ -21,7 +21,7 @@ router.get("/:id",  asyncWrapper(async (req, res) => {
 }));
 
 //POST api/plans
-router.post("/",  [validator("Plan")],asyncWrapper(async (req, res) => {
+router.post("/", [validator("Plan")], asyncWrapper(async (req, res) => {
     await plansService.create(req.body);
     res.send(plan);
 }));
