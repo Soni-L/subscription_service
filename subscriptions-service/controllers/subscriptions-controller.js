@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const asyncWrapper = require("../utilities/async-wrapper").AsyncWrapper;
 const subscriptionService = require("../services/subscriptions-service");
+const validator = require("../middleware/validator");
 
 //GET api/subscriptions
 router.get("/", asyncWrapper(async (req, res) => {

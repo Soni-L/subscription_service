@@ -1,7 +1,6 @@
 const Joi = require("joi");
 const Subscription = require("../models/subscription");
-const Plan = require("../models/plan");
-const ValidationError = require("../errors/validation-error");
+const ValidationError = require("../../errors/validation-error");
 
 "use strict"
 
@@ -11,11 +10,6 @@ let validators = {
             default: Subscription.SubscriptionValidationSchema
         }
     },
-    "Plan" : {
-        scopes: {
-            default: Plan.PlanValidationSchema
-        }
-    }
 }
 
 function scopeExists(validator, scope){
